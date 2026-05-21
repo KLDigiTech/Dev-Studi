@@ -11986,7 +11986,7 @@ html {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 270px;
 }
 
 footer.footer {
@@ -12034,6 +12034,7 @@ p {
 .image-card {
   position: relative;
 }
+.image-card:hover .action-image-buttons,
 .image-card:hover .titre-image {
   opacity: 1;
 }
@@ -12048,6 +12049,17 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
   opacity: 0;
   transition: all 0.3s;
 }
