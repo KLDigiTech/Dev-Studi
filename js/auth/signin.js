@@ -13,6 +13,8 @@ function checkCredentials() {
         const token = "sdngfpodngpsdjfjeqfsbiubgiuqbfiubsv";
         setToken(token);
 
+        setCookie(roleCookieName, "admin", 7);
+
         window.location.replace("/");
     } else {
         mailInput.classList.add("is-invalid");
